@@ -1,0 +1,75 @@
+ <!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset=utf-8>
+<title>Làm đẹp code online cho - JavaScript, HTML, CSS and PHP</title>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<meta name=author content="Phuong Nguyen ~ www.phuongblog.com">
+<meta name=description content="With Code Beautifier, you can pretty-print and syntax highlight source code written in JavaScript, HTML, CSS, PHP or other programming languages." />
+<link href="//rawgit.com/phuongcantho/Data/master/css-file/bootstrap.min.css" rel="stylesheet" />
+<link href="//rawgit.com/phuongcantho/Data/master/css-file/bootstrap-responsive.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="//rawgit.com/phuongcantho/Data/master/css-file/codemirror.css" />
+<script src="//rawgit.com/phuongcantho/Data/master/js-file/codemirror.js"></script>
+<script src="//rawgit.com/phuongcantho/Data/master/js-file/formatting.js"></script>
+<script src="//rawgit.com/phuongcantho/Data/master/js-file/xml.js"></script>
+<script src="//rawgit.com/phuongcantho/Data/master/js-file/htmlmixed.js"></script>
+</head>
+<body>
+<div class="container">
+<h2><a href="/beautifier/">Source Code Beautifier</a></h2>
+<div class="control-group help">
+Copy-paste any obfuscated piece of source code and the online beautifier will prettify and syntax-highlight the code making it easier to read and understand.. <a href="#info" data-toggle="modal">learn more &rarr;</a>
+</div>
+<style>
+.CodeMirror {
+border: 1px solid #C0C0C0;
+height: auto;
+font-family: 'Source Code Pro', monospace;
+}
+.CodeMirror-empty {
+outline: 1px solid #c22;
+}
+.CodeMirror-empty.CodeMirror-focused {
+outline: none;
+}
+.CodeMirror pre.CodeMirror-placeholder {
+color: #999;
+}
+</style>
+<form class="form-horizontal well">
+<div class="control-group">
+<textarea id="code" name="code" placeholder="Copy-paste your source code here..">
+&lt;!-- Sample Source Code --&gt;<br />
+&lt;!DOCTYPE html&gt;<br />
+&lt;html&gt;<br />
+&lt;head&gt;<br />
+&lt;meta charset="utf-8"&gt;<br />
+&lt;meta name="viewport" content="width=device-width"&gt;<br />
+&lt;title&gt;ctrlq&lt;/title&gt;<br />
+&lt;/head&gt;<br />
+&lt;body&gt;&lt;h1&gt;Hello World&lt;/h1&gt;&lt;/body&gt;<br />
+&lt;/html&gt;</textarea>
+</div>
+<div class="control-group">
+<div class="controls2" style="float:right">
+<a href="#" onclick="autoFormat();return false;" class="btn btn-inverse btn-large"><i class="icon-white icon-camera"></i> Beautify Code</a>
+</div>
+</div>
+</form>
+<script>
+var editor = CodeMirror.fromTextArea(document.getElementById("code"), {
+lineNumbers: true,
+lineWrapping: false,
+viewportMargin: Infinity,
+autofocus: true,
+mode: "htmlmixed"
+});
+function autoFormat() {
+CodeMirror.commands["selectAll"](editor);
+editor.autoFormatRange(editor.getCursor(true), editor.getCursor(false));
+editor.setCursor(0);
+}
+</script>
+</div>
+</body>
+</html>
