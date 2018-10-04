@@ -1,0 +1,168 @@
+.putme img:hover {
+    transform: translate3d(0px, -40%, 0px);
+}
+.putme {
+  transform: translate3d(0px, 0px, 0px);
+  width: 100%;
+}
+.image-view-scroll {
+  border: 1px solid #d2d2d2;
+  transform: translate3d(0px, 0px, 0px);
+  transition: all 0.6s ease 0s;
+  width: 100%;
+}
+img {
+max-width:100%;
+height:auto;
+}
+.item-view {
+margin-top:5%;
+}
+.item-view .post-wrapper {
+padding-right:480px;
+position:relative;
+}
+.item-view .post-wrapper .snippet-thumbnail-container {
+margin-bottom:60px;
+float:left;
+max-height: 666px;
+overflow:hidden;
+}
+.item-view .post-wrapper .snippet-thumbnail-container img {
+display:block;
+margin:0;
+}
+.item-view .post-wrapper .post-heading {
+float:right;
+margin-right:-480px;
+width:420px;
+padding-top:0px;
+border-bottom:1px solid #fbeeeb;
+}
+.item-view .post-wrapper .post-heading&gt;* {
+margin-bottom:30px;
+}
+.item-view .post-wrapper .post-heading a {
+text-decoration:none;
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+}
+.item-view .post-wrapper .post-heading .post-footer a:hover {
+color:#303030;
+border-bottom:1px solid #ddd;
+}
+.item-view .post-wrapper .post-title {
+font:normal bold 28px &#39;Quattrocento Sans&#39;,Helvetica;
+color:#303030;
+line-height:1.1em;
+}
+.item-view .post-snippet a {
+border-bottom:1px solid #ddd;
+}
+.item-view .post-wrapper .buybutton .buynow {
+position:relative;
+padding:10px 15px 10px 60px;
+display:inline-block;
+color:#fff;
+text-decoration:none;
+background-color:#df5d3d;
+}
+.item-view .post-wrapper .buybutton .buynow:hover {
+opacity:.8;
+}
+.item-view .post-wrapper .buybutton .buynow:after {
+content:&#39;&#39;;
+position:absolute;
+top:50%;
+left:15px;
+margin-top:-8px;
+width:14px;
+height:14px;
+background:url(https://image.flaticon.com/icons/svg/25/25284.svg) no-repeat center center;
+background-size:cover;
+}
+.item-view .post-wrapper .buybutton .buynow:before {
+content:&#39;&#39;;
+position:absolute;
+top:50%;
+left:43px;
+width:1px;
+height:24px;
+margin-top:-12px;
+background:rgba(255,255,255,.2);
+}
+.homepage-view .post-outer-container .snippet-thumbnail-container {
+display:block;
+margin-bottom:10px;
+}
+.page-view .post-wrapper {
+padding:60px 0;
+}
+.page-view .post-wrapper .post-title {
+text-align:center;
+font-size:48px;
+font-weight:normal;
+margin-bottom:60px;
+}
+.post-heading .post-share-buttons {
+font-size:0;
+margin-top:30px;
+}
+.post-heading .post-share-buttons a {
+display:inline-block;
+margin:5px;
+width:20px;
+height:20px;
+border-radius:100px;
+overflow:hidden;
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center;
+text-indent:-500px;
+opacity:.4;
+}
+.post-heading .post-share-buttons a {
+border:0;
+}
+.post-heading h1{
+border-bottom: 8px groove #ff6000;
+}
+
+.post-heading .post-share-buttons .icon-twitter {
+background-image:url(https://4.bp.blogspot.com/-3uGEZ1N2ZhM/WMlIkg56_kI/AAAAAAAAKHk/OjrAf4mZNfI1y2A-_AEfpgK4sJj_l1NTQCPcB/s1600/twitter.png);
+}
+.post-heading .post-share-buttons .icon-facebook {
+background-image:url(https://1.bp.blogspot.com/-5gkW4ebGh6Y/WMlJ-vaKfqI/AAAAAAAAKKM/zvNmRBlgRDoLGXYRxfij6aYgIcVJvpsBgCPcB/s1600/facebook.png);
+}
+.post-heading .post-share-buttons .icon-pinterest {
+display:none;
+background-image:url(https://4.bp.blogspot.com/-vQbQCCc4CJg/WMlIj3jWCyI/AAAAAAAAKHk/nK8iMEo7o_EYnp1ENhpYKRfgAFkofa7qQCPcB/s1600/pinterest.png);
+}
+.post-heading .post-share-buttons .icon-gplus {
+background-image:url(https://2.bp.blogspot.com/-WbjSRH4odpU/WMlJ--ofbeI/AAAAAAAAKKM/bZTk7BXcP4MKbyhoZ69OHvwo70ilnm6cACPcB/s1600/gplus.png);
+}
+.post-heading .post-share-buttons a:hover {
+opacity:1;
+}
+@media screen and (max-width:960px) {
+.item-view .post-wrapper {
+padding-right:0;
+}
+.item-view .post-wrapper .snippet-thumbnail-container {
+float:none;
+}
+.item-view .post-wrapper .post-heading {
+float:none;
+margin-right:0;
+width:100%;
+padding-top:0;
+border:0;
+}
+}
+@media screen and (max-width:720px) {
+.page-view .post-wrapper {
+padding:30px 0;
+}
+}
+.separator img{display:none}.hidden-1,.hr-text{display:none}
